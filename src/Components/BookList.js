@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import useFetch from './useFetch';
 
 const BookList = () => {
-    const { data: books } = useFetch('http://localhost:8000/books');
+    const { data: books } = useFetch('https://bookstore-guh5.onrender.com/books');
 
     // Extract unique genres from the books data
     const uniqueGenres = Array.from(new Set(books.map(book => book.genre)));

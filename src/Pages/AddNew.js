@@ -25,7 +25,7 @@ const AddNew = () => {
       image
     };
 
-    fetch('http://localhost:8000/books', {
+    fetch('https://bookstore-guh5.onrender.com/books', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(book)

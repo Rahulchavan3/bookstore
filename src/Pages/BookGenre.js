@@ -3,7 +3,7 @@ import useFetch from '../Components/useFetch';
 
 const Bookgenre = () => {
     const {genre} = useParams();
-    const {data : books} = useFetch('http://localhost:8080/books/');
+    const {data : books} = useFetch('https://bookstore-guh5.onrender.com/books/');
     const booklist =  books.filter((book)=>book.genre === genre);
     
      

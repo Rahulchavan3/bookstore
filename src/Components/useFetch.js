@@ -5,7 +5,7 @@ const useFetch=(url)=>{
     
 
     useEffect(()=>{
-        fetch('http://localhost:8000/books')
+        fetch('https://bookstore-guh5.onrender.com/books')
         .then(res=>{
              if(!res.ok){
                 throw new Error(`HTTP error! status: ${res.status}`);
