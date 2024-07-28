@@ -2,37 +2,517 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-custom {
+  background-color: #FFDBDC !important; /* Custom background color */
+  font-family: 'Inknut Antiqua', serif !important; /* Custom font family */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-custom .navbar-brand {
+  color: #000000 !important; /* Custom font color */
+  text-decoration: none !important; /* Remove underline */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-custom .navbar-nav {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-custom .nav-link {
+  color: #000000 !important; /* Custom font color */
+  text-decoration: none !important; /* Remove underline */
+  margin-right: 15px; /* Add spacing between links */
+  margin-top: 14px; /* Margin at the top of each link */
+  margin-bottom: 10px; /* Margin at the bottom of each link */
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+  background-color: #eac2c3 !important; /* Slightly darker shade for hover and active states */
+  color: #000000 !important;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: #000000 !important; /* Toggler button border color */
+}
+.home{
+  margin-right:50px;
+  margin-left: 50px;
+  margin-top:30px;
+}
+
+
+/*heroSection*/
+.hero-section {
+  max-height: 500px; /* Set the max-height of the hero section */
+  overflow: hidden; /* Hide anything that overflows */
+}
+
+.hero-section .row {
+  height: 100%; /* Ensure the row takes full height of the section */
+}
+
+.hero-section .image-container img {
+  height: 100%; /* Ensure the image takes full height of its container */
+  width: 100%; /* Ensure the image takes full width of its container */
+  object-fit: cover; /* Cover the container, maintaining aspect ratio */
+}
+
+.text-container {
+  margin-top: 60px;
+  padding-left: 15px; /* Add padding to the text container */
+  height: 100%; /* Ensure the text container takes full height */
+}
+
+.text-container h1 {
+  font-size: 4rem; /* Adjust font size to fit within 500px height */
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif ;/* Adjust spacing */
+  
+}
+
+.text-container p {
+  font-size: 3rem; /* Adjust font size for better fit */
+  margin-bottom: 10px; /* Adjust spacing */
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.text-container .btn {
+  font-size: 1.2rem;
+  background-color: #FFDBDC;
+  color:#000000; /* Adjust font size for the button */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.text-container blockquote {
+  font-size: 1.25rem; /* Adjust font size for the quote */
+  font-style: italic; /* Italicize the quote */
+  margin: 20px 0; /* Spacing around the quote */
+}
+
+.text-container blockquote footer {
+  font-size: 1rem; /* Adjust font size for the quote author */
+  color: #6c757d; /* Light color for the author */
+}
+
+/*booklist css*/
+.book-list-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fe696e;
+  font-family: 'Inknut Antiqua', serif !important;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.book-card:hover {
+  transform: scale(1.05); /* Hover effect */
+}
+
+.book-link {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Inherit color to avoid blue link color */
+}
+
+.book-link:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+}
+
+.book-image {
+  width: 100%;
+  height: 250px; /* Adjust height to fit your design */
+  object-fit:fill; /* Maintain aspect ratio */
+}
+
+.book-genre {
+  font-size: 1em;
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px 0; /* Add some padding for spacing */
+  background-color: #f9f9f9; /* Background color for genre text */
+}
+
+/*Book Genre Page css*/
+/* Title styling */
+/* Main title styling */
+.bookgenre-title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 2rem 0;
+  color: #fe696e;
+  font-family: 'Inknut Antiqua', serif !important;
+}
+
+/* Container for book cards */
+.bookgenre-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensures four cards per row */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  max-width: 1200px; /* Optional: max width to center content */
+  margin: 0 auto; /* Center the grid within the parent */
+}
+
+/* Individual book card styling */
+.bookgenre-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Make cards of equal height */
+}
+
+/* Hover effect for book card */
+.bookgenre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Book image styling */
+.bookgenre-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  max-height: 200px; /* Restrict image height for consistency */
+  object-fit: fill; /* Ensure image maintains aspect ratio */
+}
+
+/* Book title styling within card */
+.bookgenre-title-h2 {
+  font-size: 2rem;
+  margin: 5px 0;
+  color: #333;
+  flex-grow: 1; /* Ensure title expands if necessary */
+}
+
+/* Author name styling */
+.bookgenre-author {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  flex-grow: 1; /* Ensure author name expands if necessary */
+}
+
+/* Book price styling */
+.bookgenre-price {
+  font-size: 1.7rem;
+  margin:5px 0;
+  color: #ff4500; /* Distinct color for price */
+}
+
+/* Button styling */
+.add-to-cart-button {
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.2s;
+  width: 100%; /* Full width button */
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* Hover effect for button */
+.add-to-cart-button:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.bookgenre-link{
+  text-decoration: none;;
+}
+.bookgenre-link:hover{
+  text-decoration: none;;
+}
+
+
+/*Book details page*/
+.detail-page {
+  margin-right: 150px;
+  margin-left: 150px;
+  margin-top: 30px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.detail-card {
+  display: flex;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 600px;
+  width: 100%; /* Adjust as needed */
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.details-image {
+  width: 50%; /* Adjust as needed */
+  height: auto;
+  object-fit: fill;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  flex: 1;
+  align-items: flex-start;
+}
+
+.details-author {
+  font-size: 1.5rem;
+  
+  color: #828181; /* Darker color for readability */
+  margin-bottom: 10px;
+  align-self: self-end;
+  margin-bottom: 40px; 
+}
+
+.details-description {
+  font-size: 1.7rem;
+  color: #555; /* Slightly lighter color for description */
+  line-height: 1.6; /* Improved readability */
+  margin-bottom: 10px;
+  align-self: self-start;
+  margin-bottom:40px;
+}
+
+.details-publication-date {
+  font-size: 1.5rem;
+  color: #666; /* Medium gray color for less emphasis */
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.details-price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fe696e; /* Same color as the title for consistency */
+  margin-bottom: 20px;
+  align-self: center;
+}
+
+
+
+.details-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fe696e;
+  font-family: 'Inknut Antiqua', serif !important;
+  align-self: center;
+}
+.add-to-cart-button-details{
+  max-width:200px;
+  background-color: #666;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, transform 0.2s;
+   /* Full width button */
+  margin-top: 10px;
+  font-weight: 600;
+  align-self: center;
+  
+}
+
+.add-to-cart-button-details:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.cartSection p{
+  text-decoration: dashed;
+}
+
+/* src/components/About.css */
+
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Inknut Antiqua', serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.about-header p {
+  font-size: 18px;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+.about-section {
+  margin-bottom: 40px;
+}
+
+.about-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #34495e;
+  font-weight: 700;
+}
+
+.about-section p {
+  font-size: 16px;
+  color: #7f8c8d;
+  font-weight: 400;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-section li {
+  margin-bottom: 10px;
+}
+
+.about-section li strong {
+  font-weight: 700;
+}
+
+.about-section a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.about-section a:hover {
+  text-decoration: underline;
+}
+
+.create{
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.create label{
+  
+  text-align: left;
+  display: block;
+}
+
+
+.create h2{
+  color:#c2185b;
+  font-size:20px;
+  margin-bottom: 30px;
+  font-family: 'Inknut Antiqua', serif !important; 
+  
+}
+
+.create input ,.create textarea , .create  select{
+  
+  width: 100%;
+  padding:6px;
+  margin:10px 0;
+  border:1px solid #ddd;
+  box-sizing: border-box;
+  display:block;
+}
+
+.create button{
+  background: #f1356d;
+  color: #fff;
+  border:0;
+  padding:8px;
+  border-radius:8px;
+  cursor:pointer;
+}
+.image-preview {
+  margin-top: 10px;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 1024px) {
+  .bookgenre-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row on medium screens */
   }
 }
+
+@media (max-width: 768px) {
+  .bookgenre-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .bookgenre-container {
+    grid-template-columns: 1fr; /* 1 card per row on very small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+{
+  "books": [
+    {
+      "id": "deac",
+      "title": "The Name",
+      "author": "Doe",
+      "description": "This Book ...",
+      "price": "123",
+      "publicationDate": "2024-07-10",
+      "genre": "Fiction",
+      "image": "https://i.ibb.co/1dGL1cf/Fiction.jpg"
+    },
+    {
+      "id": "d854",
+      "title": "The Silent Patient",
+      "author": "Alex Michaelides",
+      "description": "The Silent Patient is a psychological thriller about a woman named Alicia Berenson who is accused of murdering her husband and stops speaking afterward. The story unfolds through the eyes of her therapist, Theo Faber, as he tries to unravel the mystery behind her silence.",
+      "price": "200",
+      "publicationDate": "2019-05-02",
+      "genre": "Psychological Thriller",
+      "image": "https://i.ibb.co/0rqP3jW/Physcological.jpg"
+    },
+    {
+      "id": "8275",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "description": "Educated is a memoir by Tara Westover, recounting her journey from growing up in a strict and abusive household in rural Idaho to pursuing an education that eventually led her to earn a Ph.D. from Cambridge University. The book explores themes of family, identity, and the transformative power of education.",
+      "price": "101",
+      "publicationDate": "2019-05-24",
+      "genre": "Memoir",
+      "image": "https://i.ibb.co/w4F8mVr/Spiritual.jpg"
+    },
+    {
+      "id": "cb00",
+      "title": "Where the Crawdads Sing",
+      "author": "Delia Owens",
+      "description": "Set in the marshes of North Carolina, Where the Crawdads Sing follows the story of Kya Clark, a young girl who raises herself in the wild after being abandoned by her family. The book weaves together a coming-of-age story with a murder mystery, exploring themes of loneliness, love, and resilience.",
+      "price": "110",
+      "publicationDate": "2021-06-16",
+      "genre": "Fiction, Mystery",
+      "image": "https://i.ibb.co/1dGL1cf/Fiction.jpg"
+    },
+    {
+      "id": "56ef",
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "description": "Becoming is a memoir by Michelle Obama, the former First Lady of the United States. The book chronicles her life from her childhood in Chicago to her years in the White House. It offers insights into her personal experiences, challenges, and achievements, and reflects on the values that have shaped her life.",
+      "price": "300",
+      "publicationDate": "2023-06-07",
+      "genre": "Memoir",
+      "image": "https://i.ibb.co/x1DCYtL/Becoming.jpg"
+    },
+    {
+      "id": "47e9",
+      "title": "Atomic Habits",
+      "author": "James Clear",
+      "description": "Atomic Habits is a self-help book that delves into the power of small habits and incremental changes. James Clear provides actionable strategies for forming good habits, breaking bad ones, and mastering the tiny behaviors that lead to remarkable results.",
+      "price": "250",
+      "publicationDate": "2022-06-15",
+      "genre": "Self-help",
+      "image": "https://i.ibb.co/QvrjscD/Atomic-Habits.jpg"
+    },
+    {
+      "id": "0a99",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "description": "The Alchemist is a philosophical novel that tells the story of Santiago, a young shepherd who dreams of finding a worldly treasure located in the Egyptian pyramids. The book explores themes of destiny, purpose, and the importance of following one’s dreams.",
+      "price": "300",
+      "publicationDate": "1998-06-17",
+      "genre": "Self-help",
+      "image": "https://i.ibb.co/9GH1YGM/The-Alchemist.jpg"
+    },
+    {
+      "id": "5776",
+      "title": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "description": "Sapiens is a non-fiction book that explores the history and evolution of humankind, from the emergence of Homo sapiens in the Stone Age to the present day. Harari examines the social, economic, and political forces that have shaped human history.",
+      "price": "275",
+      "publicationDate": "2021-02-17",
+      "genre": "Non-fiction, History",
+      "image": "https://i.ibb.co/N9S3JNN/Sapiens.jpg"
+    }
+  ]
+}
